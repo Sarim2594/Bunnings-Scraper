@@ -185,7 +185,7 @@ def extract_specifications(driver, scraped_tools, columns, tool_url):
                 (
                     By.CSS_SELECTOR,
                     ".MuiTypography-root.link-headings.increase-h2.MuiTypography-h2",
-                )update_data_dict
+                )
             )
         )
         if not_found.text.strip() == "Sorry, page not found!":
@@ -353,7 +353,9 @@ def extract_specifications(driver, scraped_tools, columns, tool_url):
             ]
             if features:
                 update_data_dict(data, columns, "Features", ", ".join(features))
-            description = driver.find_element(By.CSS_SELECTOR, ".whitespace-pre-wrap").text.strip()
+            description = driver.find_element(
+                By.CSS_SELECTOR, ".whitespace-pre-wrap"
+            ).text.strip()
             update_data_dict(data, columns, "Description", description)
         except Exception as e:
             print("⚠ Description/features error:", e)
