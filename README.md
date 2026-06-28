@@ -67,9 +67,10 @@ python main.py
 
 ## Output
 
-The output is an Excel file named `bunnings2.xlsx`. 
-- If the file doesn't exist, it will be created automatically. 
-- If it does exist, new scraped products will be appended to it. 
+The output is an Excel file named `bunnings2.xlsx`.
+
+- If the file doesn't exist, it will be created automatically.
+- If it does exist, new scraped products will be appended to it.
 - The scraper also flags products that might require manual review (e.g., missing price or missing model number) in a designated `review_required` column.
 
 ## Disclaimer

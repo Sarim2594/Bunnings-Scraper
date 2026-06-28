@@ -184,7 +184,7 @@ def extract_specifications(driver, scraped_tools, columns, tool_url):
             EC.presence_of_element_located(
                 (
                     By.CSS_SELECTOR,
-                    ".MuiTypography-root.link-headings.increase-h2.MuiTypography-h2",
+                    "MuiTypography-root.link-headings.increase-h2.MuiTypography-h2",
                 )
             )
         )
